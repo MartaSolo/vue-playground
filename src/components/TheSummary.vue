@@ -1,14 +1,27 @@
 <script lang="ts" setup></script>
 
 <template>
-  <div>
-    <h1>Summary</h1>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id officiis et qui repudiandae quia optio iusto maxime reiciendis saepe cupiditate?</p>
-  </div>
+  <table>
+    <tr>
+      <th>Company</th>
+      <th>Contact</th>
+      <th>Country</th>
+    </tr>
+    <tr>
+      <td>Alfreds Futterkiste</td>
+      <td>Maria Anders</td>
+      <td>Germany</td>
+    </tr>
+    <tr>
+      <td>Centro comercial Moctezuma</td>
+      <td>Francisco Chang</td>
+      <td>Mexico</td>
+    </tr>
+  </table>
 </template>
 
 <style lang="css" scoped>
-.description {
-  color: palevioletred;
-}
+table {
+  background-color: palegreen;
+} 
 </style>
