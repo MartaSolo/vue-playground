@@ -2,9 +2,8 @@
 
 <template>
   <div>
-    <div class="description">
-      This component is a description of TheProduct component
-    </div>
+    <h1>Summary</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id officiis et qui repudiandae quia optio iusto maxime reiciendis saepe cupiditate?</p>
   </div>
 </template>
 
