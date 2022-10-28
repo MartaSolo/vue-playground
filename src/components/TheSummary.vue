@@ -13,5 +13,5 @@
 <style lang="css" scoped>
 table {
   background-color: palegreen;
-} 
+}
 </style>
