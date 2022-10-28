@@ -18,6 +18,6 @@ const { data, error } = useApi("https://dummyjson.com/products");
 <style scoped>
 .product {
   background-color: palevioletred;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
 }
 </style>
