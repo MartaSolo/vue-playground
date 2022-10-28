@@ -1,23 +1,9 @@
 <script setup lang="ts">
-import { useApi } from "@/composables/api.js";
-
-const { data, error } = useApi("https://dummyjson.com/products");
+import TheProducts from "@/components/TheProducts.vue";
 </script>
 
 <template>
-  <div v-if="error">Oops! Error encountered: {{ error.message }}</div>
-  <div v-else-if="data">
-    Data loaded:
-    <div class="product" v-for="product in data.products" :key="product.id">
-      {{ product.title }}
-    </div>
-  </div>
-  <div v-else>Loading...</div>
+  <TheProducts />
 </template>
 
-<style scoped>
-.product {
-  background-color: palevioletred;
-  margin-bottom: 10px;
-}
-</style>
+<style scoped></style>
