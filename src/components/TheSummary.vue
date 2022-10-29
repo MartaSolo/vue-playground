@@ -1,6 +1,15 @@
 <script lang="ts" setup></script>
 
-<template>
+<template>  
+  <dl>
+    <dt>Coffee</dt>
+    <dd>- black hot drink</dd>
+    <dt>Milk</dt>
+    <dd>- white cold drink</dd>
+    <dt>Tea</dt>
+    <dd>- white hot drink</dd>
+  </dl>
+
   <table>
     <tr>
       <th>Company</th>
@@ -11,11 +20,6 @@
       <td>Alfreds Futterkiste</td>
       <td>Maria Anders</td>
       <td>Germany</td>
-    </tr>
-    <tr>
-      <td>Centro comercial Moctezuma</td>
-      <td>Francisco Chang</td>
-      <td>Mexico</td>
     </tr>
   </table>
 </template>
