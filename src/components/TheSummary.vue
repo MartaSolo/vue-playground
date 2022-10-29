@@ -1,9 +1,12 @@
 <script lang="ts" setup></script>
 
 <template>
-  <blockquote cite="http://www.worldwildlife.org/who/index.html">
-  For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.
-  </blockquote>
+  <dl>
+    <dt>Coffee</dt>
+    <dd>- black hot drink</dd>
+    <dt>Milk</dt>
+    <dd>- white cold drink</dd>
+  </dl>
 </template>
 
 <style lang="css" scoped>
