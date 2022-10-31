@@ -1,14 +1,18 @@
 <script lang="ts" setup></script>
 
 <template>
-  <dl>
-    <dt>Coffee</dt>
-    <dd>- black hot drink</dd>
-    <dt>Milk</dt>
-    <dd>- white cold drink</dd>
-    <dt>Tea</dt>
-    <dd>- white hot drink</dd>
-  </dl>
+  <table>
+    <tr>
+      <td>Emil</td>
+      <td>Tobias</td>
+      <td>Linus</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>14</td>
+      <td>10</td>
+    </tr>
+  </table>
 </template>
 
 <style lang="css" scoped>
