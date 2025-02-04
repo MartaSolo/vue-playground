@@ -16,7 +16,7 @@
     </span>
     <span v-else-if="kicker.text" class="hero-card-headings__kicker">
       <span class="hero-card-headings__mobile-text-element">
-        {{ kicker.text.mobile }}
+        {{ kicker.text.mobile || kicker.text.desktop }}
       </span>
       <span class="hero-card-headings__desktop-text-element">
         {{ kicker.text.desktop }}
@@ -29,7 +29,7 @@
       class="hero-card-headings__title"
     >
       <span class="hero-card-headings__mobile-text-element">
-        {{ title.text.mobile }}
+        {{ title.text.mobile || title.text.desktop }}
       </span>
       <span class="hero-card-headings__desktop-text-element">
         {{ title.text.desktop }}
@@ -38,7 +38,7 @@
 
     <span v-if="description.text" class="hero-card-headings__description">
       <span class="hero-card-headings__mobile-text-element">
-        {{ description.text.mobile }}
+        {{ description.text.mobile || description.text.desktop }}
       </span>
       <span class="hero-card-headings__desktop-text-element">
         {{ description.text.desktop }}
