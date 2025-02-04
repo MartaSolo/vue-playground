@@ -1,6 +1,6 @@
 <script lang="ts" setup></script>
 
-<template>  
+<template>
   <dl>
     <dt>Coffee</dt>
     <dd>- black hot drink</dd>
