@@ -14,47 +14,51 @@
       <span> {{ fashionShowCountdown.minutes }} {{ "prspa_minutes" }} </span>
       <span> {{ fashionShowCountdown.seconds }} {{ "prspa_seconds" }} </span>
     </span>
-    <span v-else-if="kicker.text" class="hero-card-headings__kicker">
-      <span class="hero-card-headings__mobile-text-element">
-        {{ kicker.text.mobile }}
-      </span>
-      <span class="hero-card-headings__desktop-text-element">
-        {{ kicker.text.desktop }}
-      </span>
-    </span>
 
-    <component
-      v-if="title.text"
-      :is="title.headerTags || 'h2'"
-      class="hero-card-headings__title"
-    >
-      <span class="hero-card-headings__mobile-text-element">
-        {{ title.text.mobile }}
+    <div class="new wrapper">
+      <!-- kicker -->
+      <span v-if="kicker.text" class="hero-card-headings__kicker">
+        <span class="hero-card-headings__mobile-text-element">
+          {{ kicker.text.mobile }}
+        </span>
+        <span class="hero-card-headings__desktop-text-element">
+          {{ kicker.text.desktop }}
+        </span>
       </span>
-      <span class="hero-card-headings__desktop-text-element">
-        {{ title.text.desktop }}
-      </span>
-    </component>
+      <!-- title -->
+      <component
+        v-if="title.text"
+        :is="title.headerTags || 'h2'"
+        class="hero-card-headings__title"
+      >
+        <span class="hero-card-headings__mobile-text-element">
+          {{ title.text.mobile }}
+        </span>
+        <span class="hero-card-headings__desktop-text-element">
+          {{ title.text.desktop }}
+        </span>
+      </component>
 
-    <span v-if="description.text" class="hero-card-headings__description">
-      <span class="hero-card-headings__mobile-text-element">
-        {{ description.text.mobile }}
+      <span v-if="description.text" class="hero-card-headings__description">
+        <span class="hero-card-headings__mobile-text-element">
+          {{ description.text.mobile }}
+        </span>
+        <span class="hero-card-headings__desktop-text-element">
+          {{ description.text.desktop }}
+        </span>
       </span>
-      <span class="hero-card-headings__desktop-text-element">
-        {{ description.text.desktop }}
-      </span>
-    </span>
 
-    <div
-      v-if="hasValidCta"
-      :class="[
-        'hero-card-headings__cta-wrapper',
-        isLinkCtaOnly && 'hero-card-headings__cta-wrapper--link-cta',
-      ]"
-    >
-      <HeroButton v-for="(cta, idx) in ctaList" :config="cta" :key="idx">
-        {{ cta.label }}
-      </HeroButton>
+      <div
+        v-if="hasValidCta"
+        :class="[
+          'hero-card-headings__cta-wrapper',
+          isLinkCtaOnly && 'hero-card-headings__cta-wrapper--link-cta',
+        ]"
+      >
+        <HeroButton v-for="(cta, idx) in ctaList" :config="cta" :key="idx">
+          {{ cta.label }}
+        </HeroButton>
+      </div>
     </div>
   </div>
 </template>
